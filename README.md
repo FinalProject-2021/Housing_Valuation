@@ -8,3 +8,4 @@
 * [40 Real Estate APIs: Zillow, Trulia, Walk Score](https://www.programmableweb.com/news/40-real-estate-apis-zillow-trulia-walk-score/2012/02/15)
 * [Trading Economics Housing Indexes](https://tradingeconomics.com/united-states/building-permits)
 * [Housing Patterns - US Census](https://www.census.gov/data/tables/time-series/demo/housing-patterns/housing-patterns-tables.html)
+* [Interest Rates by Year](https://data.worldbank.org/indicator/FR.INR.RINR?locations=US)
