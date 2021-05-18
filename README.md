@@ -46,3 +46,4 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * [Trading Economics Housing Indexes](https://tradingeconomics.com/united-states/building-permits)
 * [Housing Patterns - US Census](https://www.census.gov/data/tables/time-series/demo/housing-patterns/housing-patterns-tables.html)
 * [Interest Rates by Year](https://data.worldbank.org/indicator/FR.INR.RINR?locations=US)
+* [Property Data](https://api.developer.attomdata.com/home)
