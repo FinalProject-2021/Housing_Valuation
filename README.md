@@ -65,3 +65,9 @@ Rental Data
 
 ##
 Home Affordability Calculation: what would be average cost/mo // what's median income?
+
+## Plan
+Separate Python notebooks for each data
+SQLite DB
+Zip Code (5 digit) as index (INT), with year (INT) and month (INT) as available
+Tuesday: Try to get data into DB
