@@ -50,24 +50,23 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * [School Data](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
 
 ## Current Data Sets in Hand
-
-Sales Count/Zip Code ATTOM
-Median Sales Price/Zip Code ATTOM
-School Grades/Zip Code Fl Dept of Ed
-Crime / Zip Code ATTOM
-FHA Loan Originations / Zip Code FHA/HUD.gov (# of mortgages in each zip in FL over 2-year period through 2019)
+* Sales Count/Zip Code ATTOM 
+* Median Sales Price/Zip Code ATTOM 
+* School Grades/Zip Code Fl Dept of Ed 
+* Crime / Zip Code ATTOM 
+* FHA Loan Originations / Zip Code FHA/HUD.gov (# of mortgages in each zip in FL over 2-year period through 2019) 
 
 ## Looking for
-Historical Avg. Mortgage Rate (monthly avg?)/FL? 
-Home ownership rate?
-Census -- Median Household Income, Pop Growth Data? 
-Rental Data
+* Historical Avg. Mortgage Rate (monthly avg?)/FL? 
+* Home ownership rate? 
+* Census -- Median Household Income, Pop Growth Data? 
+* Rental Data - [RapidAPI.com](https://rapidapi.com/moneals/api/rent-estimate)
 
 ##
-Home Affordability Calculation: what would be average cost/mo // what's median income?
+* Home Affordability Calculation: what would be average cost/mo // what's median income?
 
 ## Plan
-Separate Python notebooks for each data
-SQLite DB
-Zip Code (5 digit) as index (INT), with year (INT) and month (INT) as available
-Tuesday: Try to get data into DB
+* Separate Python notebooks for each data
+* SQLite DB
+* Zip Code (5 digit) as index (INT), with year (INT) and month (INT) as available
+* Tuesday: Try to get data into DB
