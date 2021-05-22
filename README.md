@@ -18,16 +18,16 @@ Key indicators we will consider for incorporation into the model include:
 5. rental afforability
 6. home prices
 7. home sales 
-8. housing starts
+AVAIL BY REGION? 8. housing starts
 9. housing supply
 10. mortgage originations
 11. FHA originations
 12. mortgage delinquency
 13. seriously delinquent mortgages
 14. change in aggregate prices
-15. home ownership rate
-16. underwater borrowers
-17. foreclosure auctions
+AVAIL BY REGION? 15. home ownership rate
+LEAVE OUT? 16. underwater borrowers
+LEAVE OUT? 17. foreclosure auctions
 
 We hope to include 8-10 indicators after we've thoroughly investigated the availability of detailed data (see below for initial data sources).
 
@@ -48,3 +48,20 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * [Interest Rates by Year](https://data.worldbank.org/indicator/FR.INR.RINR?locations=US)
 * [Property Data](https://api.developer.attomdata.com/home)
 * [School Data](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
+
+## Current Data Sets in Hand
+
+Sales Count/Zip Code ATTOM
+Median Sales Price/Zip Code ATTOM
+School Grades/Zip Code Fl Dept of Ed
+Crime / Zip Code ATTOM
+FHA Loan Originations / Zip Code FHA/HUD.gov (# of mortgages in each zip in FL over 2-year period through 2019)
+
+## Looking for
+Historical Avg. Mortgage Rate (monthly avg?)/FL? 
+Home ownership rate?
+Census -- Median Household Income, Pop Growth Data? 
+Rental Data
+
+##
+Home Affordability Calculation: what would be average cost/mo // what's median income?
