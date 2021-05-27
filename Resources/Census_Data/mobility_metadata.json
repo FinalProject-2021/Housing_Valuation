@@ -1,0 +1,88 @@
+{
+    "release": {
+        "id": "acs2019_5yr",
+        "name": "ACS 2019 5-year",
+        "years": "2015-2019"
+    },
+    "tables": {
+        "B07003": {
+            "columns": {
+                "B07003001": {
+                    "indent": 0,
+                    "name": "Total:"
+                },
+                "B07003002": {
+                    "indent": 1,
+                    "name": "Male"
+                },
+                "B07003003": {
+                    "indent": 1,
+                    "name": "Female"
+                },
+                "B07003004": {
+                    "indent": 1,
+                    "name": "Same house 1 year ago:"
+                },
+                "B07003005": {
+                    "indent": 2,
+                    "name": "Male"
+                },
+                "B07003006": {
+                    "indent": 2,
+                    "name": "Female"
+                },
+                "B07003007": {
+                    "indent": 1,
+                    "name": "Moved within same county:"
+                },
+                "B07003008": {
+                    "indent": 2,
+                    "name": "Male"
+                },
+                "B07003009": {
+                    "indent": 2,
+                    "name": "Female"
+                },
+                "B07003010": {
+                    "indent": 1,
+                    "name": "Moved from different county within same state:"
+                },
+                "B07003011": {
+                    "indent": 2,
+                    "name": "Male"
+                },
+                "B07003012": {
+                    "indent": 2,
+                    "name": "Female"
+                },
+                "B07003013": {
+                    "indent": 1,
+                    "name": "Moved from different state:"
+                },
+                "B07003014": {
+                    "indent": 2,
+                    "name": "Male"
+                },
+                "B07003015": {
+                    "indent": 2,
+                    "name": "Female"
+                },
+                "B07003016": {
+                    "indent": 1,
+                    "name": "Moved from abroad:"
+                },
+                "B07003017": {
+                    "indent": 2,
+                    "name": "Male"
+                },
+                "B07003018": {
+                    "indent": 2,
+                    "name": "Female"
+                }
+            },
+            "denominator_column_id": "B07003001",
+            "title": "Geographical Mobility in the Past Year by Sex for Current Residence in the United States",
+            "universe": "Population 1 Year and Over in the United States"
+        }
+    }
+}
