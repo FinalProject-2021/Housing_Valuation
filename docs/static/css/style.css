@@ -1,0 +1,25 @@
+.jumbotron {
+  min-height: 50px;
+  text-align: center;
+  background-position-y: 45%;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/2855628/pexels-photo-2855628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  padding: 1% 1% 1% 1%;
+}
+
+h1 {
+  font-size: 3em;
+  color:white;
+}
+
+.container-iframe {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 1% 1% 1% 1%
+}
+
+.responsive-iframe {
+  width: 100%;
+  height: 79vh;
+}
