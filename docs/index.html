@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
-
 </head>
 
 <body>
     <div class="jumbotron bg-cover text-white">
         <div class="container text-center">
-            <h1 class="display-4 font-weight-bold">Florida Housing Valuation</h1>
+            <h1>Florida Housing Valuation</h1>
+            <!-- <h1 class="display-4 font-weight-bold">Florida Housing Valuation</h1> -->
         </div>
     </div>
-    <div>
-        <iframe
-            src="https://public.tableau.com/views/Test_Dashboard_16219866303030/Dashboard1?:showVizHome=no&:embed=true"
-            width="1000" height="600">
+    <div class="container-iframe">
+        <iframe class="responsive-iframe"
+            src="https://public.tableau.com/views/FL_Housing_Valuation/Dashboard1?:showVizHome=no&:embed=true"
+            
+            ><!-- width="1000" height="600" -->
             <param name="filter" value=":original_view=yes" />
         </iframe>
     </div>
