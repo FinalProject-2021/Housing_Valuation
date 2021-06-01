@@ -70,3 +70,18 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * SQLite DB  
 * Zip Code (5 digit) as index (INT), with year (INT) and month (INT) as available  
 * Tuesday: Try to get data into DB  
+
+## Project Report
+We began by extracting data through the sites listed under Data Sources. This required a variety of approaches, including repeated calls from ATTOM Data's API, from which we harvested a great deal of data.
+
+All of the data was available by Florida zip code for 2019 and 2020. Some of the data was available for 2021. Some data was annual, such as mobility rate and median household income, while other data was available for each month.
+
+We used extensive SQL pulls to join and filter this data into a SQLite database. This resulted in a database organized by zip code (Florida only), month, and year with over 21,000 records, and there were 29 columns.
+
+We began experimenting with different machine learning algorithms. We used [EXPLAIN MELT APPROACH], a Lazy Predictor algorithm to identify the strongest approaches [EXPLAIN FURTHER?], which included approaches not covered in the class. In addition, we used KNN and SVM approaches.
+
+We also experimented with narrower and wider feature sets and with different labels. We consistently employed the following features: Zip Code, Year, Month, Median Sale Price, Total # of Sales, count of FHA loans, a calculated home affordability score (based on median mortgage payments' relation to 30% of median household income), and rent affordability (similar but with rent). [NAME OF FEATURES IN ALLMODELS], and we experimented with including other features, such as median household income, rent price, property taxes, # of people employed full time, # of unemployed, median loan amount, term, and interest rate [OTHERS?].
+
+In addition, we experimented with different label values, including predicting median home price and categorical predictions of the change in median home price over a 1 and 3 month period were positive or negative. We also experimented with including calculated 1, 2, and 3 month changes in median home price in the features.
+
+The results ...
