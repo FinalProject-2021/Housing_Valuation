@@ -50,11 +50,11 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * [School Data](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
 
 ## Current Data Sets in Hand
-* Sales Count/Zip Code ATTOM  
-* Median Sales Price/Zip Code ATTOM   
-* School Grades/Zip Code Fl Dept of Ed   
-* Crime / Zip Code ATTOM   
-* FHA Loan Originations / Zip Code FHA/HUD.gov (# of mortgages in each zip in FL over 2-year period through 2019) 
+* Sales Count/Zip Code - [ATTOM](https://api.developer.attomdata.com/home)  
+* Median Sales Price/Zip Code - [ATTOM](https://api.developer.attomdata.com/home)
+* School Grades/Zip Code - [Fl Dept of Ed](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
+* Crime / Zip Code - [ATTOM](https://api.developer.attomdata.com/home)
+* FHA Loan Originations / Zip Code - [HUD.gov](https://www.hud.gov/program_offices/housing/rmra/oe/rpts/sfsnap/sfsnap) (# of mortgages in each zip in FL over 2-year period through 2019) 
 
 ## Looking for
 * Historical Avg. Mortgage Rate (monthly avg?)/FL?   
@@ -62,8 +62,9 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * Census -- Median Household Income, Pop Growth Data?  
 * Rental Data - [RapidAPI.com](https://rapidapi.com/moneals/api/rent-estimate)  
 
-##
-* Home Affordability Calculation: what would be average cost/mo // what's median income?  
+## Calculation Sources
+* Home Affordability Calculation - [National Association of Realtors](https://www.nar.realtor/research-and-statistics/housing-statistics/housing-affordability-index/methodology)
+* Mortgage Paymeny Calculation - [Medium.com](https://medium.com/personal-finance-analytics/mortgage-calculator-python-code-94d976d25a27)
 
 ## Plan
 * Separate Python notebooks for each data  
