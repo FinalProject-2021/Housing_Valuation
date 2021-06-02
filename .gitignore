@@ -131,3 +131,6 @@ dmypy.json
 
 # API File
 config.py
+
+.vscode/settings.json
+.DS_Store
