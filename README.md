@@ -77,7 +77,7 @@ We began by extracting data through the sites listed under Data Sources. This re
 
 All of the data was available by Florida zip code for 2019 and 2020. Some of the data was available for 2021. Some data was annual, such as mobility rate and median household income, while other data was available for each month.
 
-We used extensive SQL pulls to join and filter this data into a SQLite database. This resulted in a database organized by zip code (Florida only), month, and year with over 21,000 records, and there were 29 columns.
+The data was cleaned in jupyter notebook and compliled into a SQLite database. This resulted in a total of 8 tables that can be joind on zip code, year, & month. We then used a SQL pull to join and filter this data into a single csv file for consumption by machine learning and Tableau. This final csv is organized by zip code (Florida only), month, and year with over 24,000 records, and 29 columns.
 
 We began experimenting with different machine learning algorithms. We used [EXPLAIN MELT APPROACH], a Lazy Predictor algorithm to identify the strongest approaches [EXPLAIN FURTHER?], which included approaches not covered in the class. In addition, we used KNN and SVM approaches.
 
