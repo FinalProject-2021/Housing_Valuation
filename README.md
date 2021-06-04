@@ -69,15 +69,11 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * Average Mortgage Rate/National - ATTOM
 * FHA Loan Originations / Zip Code - HUD.gov (# of mortgages in each zip in FL over 2-year period through 2019)
 
-## Looking for
-* Historical Avg. Mortgage Rate (monthly avg?)/FL?   
-* Home ownership rate?   
-* Census -- Median Household Income, Pop Growth Data?  
-* Rental Data - [RapidAPI.com](https://rapidapi.com/moneals/api/rent-estimate)  
-
 ## Calculation Sources
 * Home Affordability Calculation - [National Association of Realtors](https://www.nar.realtor/research-and-statistics/housing-statistics/housing-affordability-index/methodology)
 * Mortgage Payment Calculation - [Medium.com](https://medium.com/personal-finance-analytics/mortgage-calculator-python-code-94d976d25a27) 
+
+---
 
 ## Project Report
 
