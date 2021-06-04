@@ -18,7 +18,7 @@ Key indicators we will consider for incorporation into the model include:
 5. rental afforability
 6. home prices
 7. home sales 
-AVAIL BY REGION? 8. housing starts
+8. housing starts
 9. housing supply
 10. mortgage originations
 11. FHA originations
@@ -37,6 +37,8 @@ We will create an interactive representation where users can search for a zip co
 
 We plan to use Python for data cleaning, JSON or a csv to store indicator data, a Flask application to generate the user's query response, and select visualization tools (perhaps Tableau, but Plotly if needed). We will deploy the project to Heroku.
 
+*Note: After working with the project, we found that deploying only to Tableau suited the needs of the visualizations.
+
 ## Data Sources & Helpful Links
 * [UCI ML Repo - Real estate valuation](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set)
 * [Federal Housing Finance Agency - House Price Index](https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index-Datasets.aspx)
@@ -48,6 +50,7 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * [Interest Rates by Year](https://data.worldbank.org/indicator/FR.INR.RINR?locations=US)
 * [Property Data](https://api.developer.attomdata.com/home)
 * [School Data](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
+* [Census Data](https://censusreporter.org)
 
 ## Current Data Sets in Hand
 * Sales Count/Zip Code - ATTOM
@@ -74,13 +77,7 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 
 ## Calculation Sources
 * Home Affordability Calculation - [National Association of Realtors](https://www.nar.realtor/research-and-statistics/housing-statistics/housing-affordability-index/methodology)
-* Mortgage Paymeny Calculation - [Medium.com](https://medium.com/personal-finance-analytics/mortgage-calculator-python-code-94d976d25a27)
-
-## Plan
-* Separate Python notebooks for each data  
-* SQLite DB  
-* Zip Code (5 digit) as index (INT), with year (INT) and month (INT) as available  
-* Tuesday: Try to get data into DB  
+* Mortgage Payment Calculation - [Medium.com](https://medium.com/personal-finance-analytics/mortgage-calculator-python-code-94d976d25a27) 
 
 ## Project Report
 
