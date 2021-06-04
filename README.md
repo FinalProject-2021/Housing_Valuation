@@ -50,11 +50,21 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * [School Data](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
 
 ## Current Data Sets in Hand
-* Sales Count/Zip Code - [ATTOM](https://api.developer.attomdata.com/home)  
-* Median Sales Price/Zip Code - [ATTOM](https://api.developer.attomdata.com/home)
-* School Grades/Zip Code - [Fl Dept of Ed](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
-* Crime / Zip Code - [ATTOM](https://api.developer.attomdata.com/home)
-* FHA Loan Originations / Zip Code - [HUD.gov](https://www.hud.gov/program_offices/housing/rmra/oe/rpts/sfsnap/sfsnap) (# of mortgages in each zip in FL over 2-year period through 2019) 
+* Sales Count/Zip Code - ATTOM
+* Median Sales Price/Zip Code - ATTOM
+* Property Tax/Zip Code - ATTOM
+* Owner Occupied/Zip Code - ATTOM
+* Renter Occupied/Zip Code - ATTOM
+* Total Vacant/Zip Code - ATTOM
+* Total Dwellings/Zip Code - ATTOM
+* Rent Prices for studio, 1bed, 2bed, 3bed, 4bed/Zip Code - ATTOM
+* Expense Index/Zip Code - Index 100 is nation average - ATTOM
+* Average Commute/Zip Code - ATTOM
+* Crime Index/Zip Code - Index 100 is nation average - ATTOM
+* School Grades/Zip Code - Fl Dept of Ed
+* Median Household Income/Zip Code - Census
+* Average Mortgage Rate/National - ATTOM
+* FHA Loan Originations / Zip Code - HUD.gov (# of mortgages in each zip in FL over 2-year period through 2019)
 
 ## Looking for
 * Historical Avg. Mortgage Rate (monthly avg?)/FL?   
@@ -86,3 +96,7 @@ We also experimented with narrower and wider feature sets and with different lab
 In addition, we experimented with different label values, including predicting median home price and categorical predictions of the change in median home price over a 1 and 3 month period were positive or negative. We also experimented with including calculated 1, 2, and 3 month changes in median home price in the features.
 
 The results ...
+
+Machine Learning
+
+Initially we ran LayzPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  Random Forest Classification received the best results from classifiers but even after adjusting parameters the best results we could get is 65% accuracy.  Therefor we found regression models would work best, so we decided to compare three different models ARIMA, VAR, and Random Forest Regressor.  We trained each model on all of 2019-2020 data and tested on Jan-Mar 2021 with additional prediction for April.  We ran the models to forecast Total Sales, FHA Loans, Median Sale Price.
