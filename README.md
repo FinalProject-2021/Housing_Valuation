@@ -99,4 +99,6 @@ The results ...
 
 Machine Learning
 
-Initially we ran LayzPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  Random Forest Classification received the best results from classifiers but even after adjusting parameters the best results we could get is 65% accuracy.  Therefor we found regression models would work best, so we decided to compare three different models ARIMA, VAR, and Random Forest Regressor.  We trained each model on all of 2019-2020 data and tested on Jan-Mar 2021 with additional prediction for April.  We ran the models to forecast Total Sales, FHA Loans, Median Sale Price.
+Initially we ran LayzPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  Random Forest Classification received the best results from classifiers but even after adjusting parameters the best results we could get is 65% accuracy.  Therefor we decided regression models would work best.  We compared three different models 2 autoregressive models ARIMA & VAR and 1 standard regression model Random Forest Regressor.  We trained each model on all of 2019-2020 data and tested on Jan-Mar 2021.  We ran the models to forecast Total Sales, FHA Loans, Median Sale Price.  We forcasted April with both ARIMA & VAR, but random forest regressor is unable to forecast past the testing data.
+
+
