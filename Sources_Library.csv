@@ -1,6 +1,0 @@
-﻿Data Point,Source,Source URL
-Sales count by zip code,ATTOM,https://api.developer.attomdata.com/home
-Median Sales Price by zip code,ATTOM,https://api.developer.attomdata.com/home
-School Grades by zip code,FL Dept of Ed,http://www.fldoe.org/accountability/accountability-reporting/school-grades/
-Crime by zip code,ATTOM,https://api.developer.attomdata.com/home
-FHA Loan Originations by zip code,HUD,https://www.hud.gov/program_offices/housing/rmra/oe/rpts/sfsnap/sfsnap
