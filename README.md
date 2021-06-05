@@ -104,7 +104,7 @@ We also experimented with narrower and wider feature sets and with different lab
 In addition, we experimented with different label values, including predicting median home price and categorical predictions of the change in median home price over a 1 and 3 month period were positive or negative. We also calculated past 1, 2, and 3 month changes in median home price in the features.
 
 ---
-### Results of Machine Learning
+### Results of Machine Learning  
 
 #### Classification vs. Regression
 Initially we ran LazyPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  
@@ -127,7 +127,7 @@ First, we recreated his methods precisely with our own data to get a feel for th
 
 We re-ran the RFR model with 16 features, including Mobility_Rate, Expense_Index, Crime_Index, Total_Vacant, Total_Dwellings, Total_Sales, FHA_Count, Home_Affordability, Rent_Affordability, Sale_Price,Last_Month_Price, Last_Month_Diff, Last_2Month_Price, Last_2Month_Diff, Last_3Month_Price, and Last_3Month_Diff.
 
-The training score from this model was 99% and testing score was 97%.
+The accuracy score from this model was 99% and testing score was 97%.
 
 We then tried different combinations of X values by removing X values one at a time or starting from scratch and adding one at a time. None of the values had as much impact on the final training and testing R2 scores as the calculated differences from the last months (Last_Month_Diff, etc.). We checked the math against the original data to make sure it was calculating correctly. Training and testing scores without the calculated differences as X values hovered around 97% for the training and 80% for the test. This made us concerned that we had overfitted the model, but because the scores from the second RF model were good, we wanted to use it to try to predict.
 
