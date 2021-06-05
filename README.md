@@ -107,12 +107,24 @@ In addition, we experimented with different label values, including predicting m
 ### Results of Machine Learning
 
 #### Classification vs. Regression
-Initially we ran LazyPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  Random Forest Classification received the best results from classifiers but even after adjusting parameters it yielded only 65% accuracy. After experimenting with different features, SVM and KNN maxed out between 63% and 64%.  Therefore we decided regression models would work best, although since many of the predictions would be based on a percentage of home price, a high accuracy rate likely reflected the relative stability of house prices month over month.  We compared three different models: 2 autoregressive models ARIMA & VAR and 1 standard regression model Random Forest Regressor.  We trained each model on all of 2019-2020 data and tested on Jan-Mar 2021.  We ran the models to forecast Total Sales, FHA Loans, Median Sale Price.  We forcasted April 2021 with both ARIMA & VAR, but random forest regressor is unable to forecast past the testing data.
+Initially we ran LazyPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  
+
+```
+from lazypredict.Supervised import LazyClassifier
+
+clf = LazyClassifier(verbose=0,ignore_warnings=False)
+models, predictions = clf.fit(X_train, X_test, y_train, y_test)
+models
+```
+![Lazy Predictor Results](Machine_Learning/Prework/LazyPredictorResults.png)
+
+Random Forest Classification received the best results from classifiers but even after adjusting parameters it yielded only 65% accuracy. After experimenting with different features, SVM and KNN maxed out between 63% and 64%.  Therefore we decided regression models would work best, although since many of the predictions would be based on a percentage of home price, a high accuracy rate likely reflected the relative stability of house prices month over month.  We compared three different models: 2 autoregressive models ARIMA & VAR and 1 standard regression model Random Forest Regressor.  We trained each model on all of 2019-2020 data and tested on Jan-Mar 2021.  We ran the models to forecast Total Sales, FHA Loans, Median Sale Price.  We forcasted April 2021 with both ARIMA & VAR, but random forest regressor is unable to forecast past the testing data.
 
 #### Time Series Analysis
 Because our data set only went back two years, we needed to find a way to do a time series prediction with a small data set, so we decided to calculate the sale price changes from month to month per ZIP code so we could train on many month-to-month deltas. A Google search for a solution led to a blog post by data scientist Mario Filho (https://www.mariofilho.com/how-to-predict-multiple-time-series-with-scikit-learn-with-sales-forecasting-example/), who suggested using the Pandas melt function to shape the dataset from a wide to a long form with many rows.  Our data set was already in long form, so the melt function wasn’t necessary, but his use of sliding window validation did prove useful.
 
 First, we recreated his methods precisely with our own data to get a feel for the sort of results we could expect: we ran a Random Forest Regressor model using only the sale price as our value and the ZIP codes and months as identifiers, the root mean squared logarithmic error (RMSLE) seemed to bottom out at .21 after six window shifts. This gave us an R2 score of 87% in the test phase. However, we didn’t want to use only sales prices to predict sales prices.
+
 We re-ran the RFR model with 16 features, including Mobility_Rate, Expense_Index, Crime_Index, Total_Vacant, Total_Dwellings, Total_Sales, FHA_Count, Home_Affordability, Rent_Affordability, Sale_Price,Last_Month_Price, Last_Month_Diff, Last_2Month_Price, Last_2Month_Diff, Last_3Month_Price, and Last_3Month_Diff.
 
 The training score from this model was 99% and testing score was 97%.
