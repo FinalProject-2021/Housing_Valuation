@@ -52,7 +52,7 @@ We plan to use Python for data cleaning, JSON or a csv to store indicator data, 
 * [School Data](http://www.fldoe.org/accountability/accountability-reporting/school-grades/)
 * [Census Data](https://censusreporter.org)
 
-## Current Data Sets in Hand
+## Data Sets Used
 * Sales Count/Zip Code - ATTOM
 * Median Sales Price/Zip Code - ATTOM
 * Property Tax/Zip Code - ATTOM
@@ -101,13 +101,13 @@ We also employed a number of approaches to time series modelling, including a ra
 
 We also experimented with narrower and wider feature sets and with different labels. We consistently employed the following features: Zip Code, Year, Month, Median Sale Price, Total # of Sales, count of FHA loans, a calculated home affordability score (based on median mortgage payments' relation to 30% of median household income), and rent affordability (similar but with rent). We experimented with including other features, such as median household income, rent price, property taxes, # of people employed full time, # of unemployed, median loan amount, term, and interest rate.
 
-In addition, we experimented with different label values, including predicting median home price and categorical predictions of the change in median home price over a 1 and 3 month period were positive or negative. We also calculated 1, 2, and 3 month changes in median home price in the features.
+In addition, we experimented with different label values, including predicting median home price and categorical predictions of the change in median home price over a 1 and 3 month period were positive or negative. We also calculated past 1, 2, and 3 month changes in median home price in the features.
 
 ---
 ### Results of Machine Learning
 
 #### Classification vs. Regression
-Initially we ran LazyPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  Random Forest Classification received the best results from classifiers but even after adjusting parameters the best results we could get is 65% accuracy. After experimenting with different features, SVM and KNN maxed out between 63% and 64%.  Therefore we decided regression models would work best, although since many of the predictions would be based on a percentage of home price, a high accuracy rate likely reflected the relative stability of house prices month over month.  We compared three different models: 2 autoregressive models ARIMA & VAR and 1 standard regression model Random Forest Regressor.  We trained each model on all of 2019-2020 data and tested on Jan-Mar 2021.  We ran the models to forecast Total Sales, FHA Loans, Median Sale Price.  We forcasted April 2021 with both ARIMA & VAR, but random forest regressor is unable to forecast past the testing data.
+Initially we ran LazyPredict to test a multitude of regression and classification algorithms to see which would potentially provide the best results.  Random Forest Classification received the best results from classifiers but even after adjusting parameters it yielded only 65% accuracy. After experimenting with different features, SVM and KNN maxed out between 63% and 64%.  Therefore we decided regression models would work best, although since many of the predictions would be based on a percentage of home price, a high accuracy rate likely reflected the relative stability of house prices month over month.  We compared three different models: 2 autoregressive models ARIMA & VAR and 1 standard regression model Random Forest Regressor.  We trained each model on all of 2019-2020 data and tested on Jan-Mar 2021.  We ran the models to forecast Total Sales, FHA Loans, Median Sale Price.  We forcasted April 2021 with both ARIMA & VAR, but random forest regressor is unable to forecast past the testing data.
 
 #### Time Series Analysis
 Because our data set only went back two years, we needed to find a way to do a time series prediction with a small data set, so we decided to calculate the sale price changes from month to month per ZIP code so we could train on many month-to-month deltas. A Google search for a solution led to a blog post by data scientist Mario Filho (https://www.mariofilho.com/how-to-predict-multiple-time-series-with-scikit-learn-with-sales-forecasting-example/), who suggested using the Pandas melt function to shape the dataset from a wide to a long form with many rows.  Our data set was already in long form, so the melt function wasn’t necessary, but his use of sliding window validation did prove useful.
