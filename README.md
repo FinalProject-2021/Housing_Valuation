@@ -1,5 +1,9 @@
 # Housing_Valuation
 
+* [WebPage](https://finalproject-2021.github.io/Housing_Valuation/) displaying the visuals created. 
+
+* The tableau story can be found [here](https://public.tableau.com/app/profile/christina.gangi/viz/FL_Housing_Valuation/Story) on the public tableau site.
+
 ## Project Proposal
 
 How much is my home worth? Is a home I'm considering fairly priced? 
