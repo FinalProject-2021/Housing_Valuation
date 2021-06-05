@@ -1,13 +1,26 @@
 ﻿Link Type,Source,Description,Source URL
+Calculation Reference,Medium,Mortgage Payment Calculation,https://medium.com/personal-finance-analytics/mortgage-calculator-python-code-94d976d25a27
+Calculation Reference,National Association of Realtors,Home Affordability Calculation,https://www.nar.realtor/research-and-statistics/housing-statistics/housing-affordability-index/methodology
 Data Source,ATTOM,Sales count by zip code,https://api.developer.attomdata.com/home
 Data Source,ATTOM,Median Sales Price by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Crime index by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Property Tax by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Owner Occupied by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Renter Occupied by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Total vacant by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Total dwellings by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Rent prices by zip code (studio - 4 bed),https://api.developer.attomdata.com/home
+Data Source,ATTOM,Expense Index by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,Average commute time by zip code,https://api.developer.attomdata.com/home
+Data Source,ATTOM,National average mortgage rate,https://api.developer.attomdata.com/home
+Data Source,Census,Mobility rate by zip code,https://censusreporter.org/
+Data Source,Census,Median household income by zip code,https://censusreporter.org/
 Data Source,FL Dept of Ed,School Grades by zip code,http://www.fldoe.org/accountability/accountability-reporting/school-grades/
-Data Source,ATTOM,Crime by zip code,https://api.developer.attomdata.com/home
 Data Source,HUD,FHA Loan Originations by zip code,https://www.hud.gov/program_offices/housing/rmra/oe/rpts/sfsnap/sfsnap
+Team Member,Alex Martinez,GitHub,https://github.com/alexmartinez1745
+Team Member,Brook Miller,GitHub,https://github.com/millerbrook
 Team Member,Christina Gangi,GitHub,https://github.com/cgangi2216
 Team Member,Christina Gangi,Tableau,https://public.tableau.com/profile/christina.gangi#!/
 Team Member,Christina Gangi,LinkedIn,https://www.linkedin.com/in/christinagangi/
 Team Member,JJ Williams,GitHub,https://github.com/jjwilliams11
-Team Member,Brook Miller,GitHub,https://github.com/millerbrook
-Team Member,Alex Martinez,GitHub,https://github.com/alexmartinez1745
 Team Member,Kim Sommer,GitHub,https://github.com/SommerKim
